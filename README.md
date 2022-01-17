@@ -1,11 +1,11 @@
-# {AdoptrPet}
-#### {This is a web application that matches interested pet owners to rehabilitated stray cats and dogs for rehoming.}, {17/01/2022}
+# AdoptrPet
+#### This is a web application that matches interested pet owners to rehabilitated stray cats and dogs for rehoming., 17/01/2022
 #### Contributors
 -[Manasseh Kinyua](https://github.com/Manasseh-Kinyua)
 -[Sharon Korir](https://github.com/sharonkorir)
 -[Basilia Wairimu](https://github.com/Bwairimu)
 -[Amin](https://github.com/Aminmoha)
-## Description {This is a web application that matches interested pet owners to rehabilitated stray cats and dogs for rehoming.},
+## Description This is a web application that matches interested pet owners to rehabilitated stray cats and dogs for rehoming.
 ## Setup/Installation Requirements
 * Click on the link and the page will load.
 * Fill the login form.
