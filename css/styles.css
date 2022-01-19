@@ -67,6 +67,83 @@ a.active,a:hover {
   display: none;
 }
 
+.container {
+  width: 90%;
+}
+
+.carousel-inner p {
+  padding-bottom: 450px;
+}
+
+.hero {
+  background: #DAF7A6;
+  height:100vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero h2 {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 40px;
+  color:white;
+}
+
+.slide-row {
+  display: flex;
+  width: 3200px;
+}
+
+.slide-col {
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+
+.user-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.user-img img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.user-text {
+  background: #2d3a59;
+  width: 520px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 10px;
+  color: #d3d4d6;
+  padding: 45px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 952px){
   label.logo {
     font-size: 30px;
