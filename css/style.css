@@ -32,7 +32,6 @@ font-family: 'Shadows Into Light', cursive;*/
 #three{
   background-color: crimson;
   grid-area: three;
-  max-width: 100%;
   text-align: center;
 }
 
@@ -55,8 +54,24 @@ font-family: 'Shadows Into Light', cursive;*/
   
 }
 
-.cats{
+.cats, .dogs{
   display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
 
+.card{
+  max-width: 33%;
+}
  
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+  .header{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+}
