@@ -2,6 +2,10 @@
 /*font-family: 'Dongle', sans-serif;
 font-family: 'Shadows Into Light', cursive;*/
 
+* {
+  box-sizing: border-box;
+}
+
 .grid-container{
   display: grid;
   grid-template-areas:
@@ -48,28 +52,34 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 .column{
-  font-family:  'Dongle', sans-serif;
-  font-size: 24px;
-  text-align: center;
-  
+  float: left;
+  width: 33.33%;
+  padding: 10px;
 }
 
-.cats, .dogs{
+.row {
+  margin: 0 -5px;
   display: flex;
-  justify-content: center;
-  max-width: 100%;
-}
-
-.card{
-  max-width: 33%;
 }
  
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
 @media only screen and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
 }
 @media only screen and (max-width: 600px){
   .header{
     width: 40%;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 425px){
