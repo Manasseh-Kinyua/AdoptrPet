@@ -2,17 +2,17 @@
 /*font-family: 'Dongle', sans-serif;
 font-family: 'Shadows Into Light', cursive;*/
 
-* {
+*{
   box-sizing: border-box;
 }
 
 .grid-container{
   display: grid;
   grid-template-areas:
-  'one one'
-  'two two'
-  'three three'
-  'four four';
+  'one one one'
+  'two two two'
+  'three three three'
+  'four four four';
 }
 
 #one{
@@ -20,22 +20,20 @@ font-family: 'Shadows Into Light', cursive;*/
   grid-area: one;
   display: flex;
   justify-content: space-between;
-  text-align: center;
   align-items: flex-end;
 }
 
 #two{
-  background-color: brown;
+  background-color: aqua;
   grid-area: two;
-  height: 400px;
   padding: 20px;
   text-align: center;
 
 }
 
 #three{
+  background-color: blue;
   grid-area: three;
-  background-color: #DAF7A6;
   text-align: center;
 }
 
@@ -43,14 +41,21 @@ font-family: 'Shadows Into Light', cursive;*/
   background-color: darkgreen;
   grid-area: four;
 }
-
+/*spacing*/
 .header{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 25%;
+  justify-content: space-evenly;
 }
-.row, #cats{
+
+.logotwo{
+  max-width: 100px;
+}
+
+.col{
+  padding: 10px;
+}
+
+/*.row, #cats{
   display: flex;
 }
 .column{
@@ -62,14 +67,16 @@ font-family: 'Shadows Into Light', cursive;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 5px;
-}
+}*/
 /*change button color*/
 
-
+/*.logotwo{
+  max-width: 100px;
+}*/
 @media only screen and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
 }
-@media only screen and (max-width: 600px){
+/*@media only screen and (max-width: 600px){
   .header{
     width: 40%;
   }
@@ -78,7 +85,7 @@ font-family: 'Shadows Into Light', cursive;*/
     display: block;
     margin-bottom: 20px;
   }
-}
+}*/
 @media only screen and (max-width: 425px){
 /*Small smartphones [325px -> 425px]*/
 }
