@@ -5,5 +5,10 @@
   grid-template-areas:
   'one one one'
   'two two two'
-  'three three three';
+  'three three three'
+  'four four four';
+ }
+
+ #one{
+   display: flex;
  }
