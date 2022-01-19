@@ -29,25 +29,27 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="animalName">{pet name}</h5>
+          <h5 class="modal-title" id="name"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
               <div class="col-sm-4" style="height: 20%;">
-                <div>[pet image]</div>
+                <div id="pic">
+                  
+                </div>
               </div>
               <div class="col-sm-8">
                 <div class="row">
-                  <div class="col-sm-7" style="background-color: cadetblue;">
-                    <div id="name">[name]</div>
-                    <div id="breed">[breed]</div>
-                    <div id="age">[age]</div>
-                    <div id="vaccination">[vaccination]</div>
+                  <div class="col-sm-7" >
+                    <div id="breed">Breed:</div><br/>
+                    <div id="gender">Gender:</div><br/>
+                    <div id="age">Age:</div><br/>
+                    <div id="vaccination">Vaccination:</div><br/>
                   </div>
-                  <div class="col-sm-5" style="background-color: chocolate;">
-                    <div id="description">[description]</div>
+                  <div class="col-sm-5">
+                    <div id="description">Description</div>
                   </div>
                 </div>
               </div>
@@ -55,12 +57,13 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Never Mind</button>
+          <button type="button" class="btn btn-primary">Yes Yes</button>
         </div>
       </div>
     </div>
   </div>
+  <button type="button" id="yuki">yuki</button>
   
 
   <script src="./js/script.js"></script>
