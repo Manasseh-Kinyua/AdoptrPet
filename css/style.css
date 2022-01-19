@@ -5,21 +5,28 @@ font-family: 'Shadows Into Light', cursive;*/
 .grid-container{
   display: grid;
   grid-template-areas:
-  'one one one'
-  'two two two'
-  'three three three'
-  'four four four';
+  'one one'
+  'two two'
+  'three three'
+  'four four';
 }
 
 #one{
   background-color: #eeb21d;
   grid-area: one;
   display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: flex-end;
 }
 
 #two{
   background-color: brown;
   grid-area: two;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+
 }
 
 #three{
@@ -33,15 +40,21 @@ font-family: 'Shadows Into Light', cursive;*/
   grid-area: four;
 }
 
-.row{
+.header{
   display: flex;
-  justify-content: center;
-  align-items: center;#
-  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
 }
-.col-sm-4{
-  max-width: 33%;
-  padding: 5px;
+
+.column{
+  font-family:  'Dongle', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  
+}
+.card{
+  background-color: blue;
 }
 
  
