@@ -11,5 +11,6 @@ $(document).ready(function(){
     $(".logohidden").hide();
     $(".logotwo").show();
   });
-
+  
+  //create hover effect on cards
 });

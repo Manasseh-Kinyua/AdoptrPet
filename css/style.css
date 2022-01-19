@@ -46,7 +46,7 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 .logotwo, .logohidden{
-  max-width: 100px;
+  max-width: 80px;
 }
 .logohidden{
   display: none;
@@ -54,6 +54,11 @@ font-family: 'Shadows Into Light', cursive;*/
 
 .col{
   padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 /*.row, #cats{
