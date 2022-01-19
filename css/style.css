@@ -34,8 +34,8 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 #three{
-  background-color: crimson;
   grid-area: three;
+  background-color: #DAF7A6;
   text-align: center;
 }
 
@@ -50,24 +50,21 @@ font-family: 'Shadows Into Light', cursive;*/
   justify-content: space-between;
   width: 25%;
 }
-
+.row, #cats{
+  display: flex;
+}
 .column{
-  float: left;
   width: 33.33%;
   padding: 10px;
-}
-
-.row {
-  margin: 0 -5px;
-  display: flex;
 }
  
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  padding: 5px;
 }
+/*change button color*/
+
 
 @media only screen and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
