@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Shadows+Into+Light&display=swap');
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  'one one one'
+  'two two two'
+  'three three three';
+ }
