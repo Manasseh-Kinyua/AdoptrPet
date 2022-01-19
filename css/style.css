@@ -33,6 +33,7 @@ font-family: 'Shadows Into Light', cursive;*/
   background-color: crimson;
   grid-area: three;
   max-width: 100%;
+  text-align: center;
 }
 
 #four{
@@ -53,8 +54,9 @@ font-family: 'Shadows Into Light', cursive;*/
   text-align: center;
   
 }
-.card{
-  background-color: blue;
+
+.cats{
+  display: flex;
 }
 
  
