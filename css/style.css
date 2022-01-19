@@ -24,7 +24,6 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 #two{
-  background-color: aqua;
   grid-area: two;
   padding: 20px;
   text-align: center;
@@ -32,7 +31,6 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 #three{
-  background-color: blue;
   grid-area: three;
   text-align: center;
 }
@@ -47,8 +45,11 @@ font-family: 'Shadows Into Light', cursive;*/
   justify-content: space-evenly;
 }
 
-.logotwo{
+.logotwo, .logohidden{
   max-width: 100px;
+}
+.logohidden{
+  display: none;
 }
 
 .col{
