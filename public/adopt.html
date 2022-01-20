@@ -108,7 +108,7 @@
         <div class="col">
           <div class="card" id="kiwi">
             <div class="card-header">Kiwi</div>
-            <div class="card-body"><img src="../assets/cats/kiwi.jpg" alt="cat" class="img-fluid"></div>
+            <div class="card-body"><img src="../assets/images/kiwi.jpg" alt="cat" class="img-fluid"></div>
             <div class="card-footer">
               <button type="button" class="btn btn-success" id="kiwi">Adopt me</button>
             </div>
@@ -118,7 +118,7 @@
         <div class="col">
           <div class="card" id="jojo">
             <div class="card-header">Jojo</div>
-            <div class="card-body"><img src="../assets/cats/jojo.jpg" alt="cat" class="img-fluid"></div>
+            <div class="card-body"><img src="../assets/images/jojo.jpg" alt="cat" class="img-fluid"></div>
             <div class="card-footer">
               <button type="button" class="btn btn-success" id="jojo">Adopt me</button>
             </div>
@@ -128,7 +128,7 @@
         <div class="col">  
           <div class="card" id="nala">
             <div class="card-header">Nala</div>
-            <div class="card-body"><img src="../assets/cats/nala.jpg" alt="cat" class="img-fluid"></div>
+            <div class="card-body"><img src="../assets/images/nala.jpg" alt="cat" class="img-fluid"></div>
             <div class="card-footer">
               <button type="button" class="btn btn-success" id="nala">Adopt me</button>
             </div>
@@ -142,7 +142,7 @@
         <div class="col">
           <div class="card" id="apollo">
             <div class="card-header">Apollo</div>
-            <div class="card-body"><img src="../assets/dogs/apollo.jpg" alt="dog" class="img-fluid"></div>
+            <div class="card-body"><img src="../assets/images/apollo.jpg" alt="dog" class="img-fluid"></div>
             <div class="card-footer">
               <button type="button" class="btn btn-success" id="apollo">Adopt me</button>
             </div>
@@ -151,7 +151,7 @@
         <div class="col">
           <div class="card" id="atlas">
             <div class="card-header">Atlas</div>
-            <div class="card-body"><img src="../assets/dogs/atlas.jpg" alt="dog" class="img-fluid"></div>
+            <div class="card-body"><img src="../assets/images/atlas.jpg" alt="dog" class="img-fluid"></div>
             <div class="card-footer">
               <button type="button" class="btn btn-success" id="atlas">Adopt me</button>
             </div>
@@ -160,16 +160,88 @@
         <div class="col">  
           <div class="card" id="yuki">
             <div class="card-header">Yuki</div>
-            <div class="card-body"><img src="../assets/dogs/yuki.jpg" alt="dog" class="img-fluid"></div>
+            <div class="card-body"><img src="../assets/images/yuki.jpg" alt="dog" class="img-fluid"></div>
             <div class="card-footer">
               <button type="button" class="btn btn-success" id="yuki">Adopt me</button>
             </div>
           </div>
         </div>   
       </div>
-      <!--<div>
-        <button type="button" class="btn btn-success" id="yuki">Browse our gallery</button>
-      </div>-->
+      
+         <!-- Modal view pet -->
+         <div class="modal fade" id="animalDetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="name"></h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <div class="container-fluid">
+                 <div class="row">
+                   <div class="col-sm-4" style="height: 20%;">
+                     <div id="pic"></div>
+                   </div>
+                   <div class="col-sm-8">
+                     <div class="row">
+                       <div class="col-sm-7">
+                         <div id="breed"></div>
+                         <hr class="line">
+                         <div id="gender"></div>
+                         <hr class="line">
+                         <div id="age"></div>
+                         <hr class="line">
+                         <div id="vaccination"></div>
+                       </div>
+                       <div class="col-sm-5">
+                         <div id="description"></div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancel">Never Mind</button>
+                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="confirm">Yes Yes</button>
+             </div>
+           </div>
+         </div>
+       </div>
+     
+         <!-- Modal pet confirm -->
+         <div class="modal fade" id="petConfirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title animate__animated animate__tada" id="name">Please confirm selection</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+               <div class="container-fluid">
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <div id="pic1"></div>
+                   </div>
+                   <div class="col-sm-8">
+                     <div  id="name1"></div>
+                     <div  id="breed1"></div>
+                     <div  id="gender1"></div>
+                     <div  id="age1"></div>
+                     <div  id="vaccination1"></div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="abort">Never Mind</button>
+               <button type="button" class="btn btn-secondary" onclick="location.href = './details.html';" data-bs-dismiss="modal" id="abort">I SAID YES</button>
+             </div>
+           </div>
+         </div>
+       </div>
     </div>
     <!--<div id="four">
       <div class="navbar">
