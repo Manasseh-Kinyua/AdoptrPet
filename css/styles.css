@@ -374,9 +374,78 @@ a.active,a:hover {
   transform: scale(0.95);
 }
 
-#team {
-  display: none;
+
+.team-area {
+  display: grid;
+  justify-content: center;
+}
+
+.section-title h1 {
+  font-size: 32px;
   text-align: center;
+  margin-bottom: 0;
+}
+
+.team-box {
+  display: inline-flex;
+}
+
+.box {
+  width: 230px;
+  margin: 20px;
+  padding: 30px 10px;
+  background: #EEB21D;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px #c7c4c4, -10px -10px 15px #fff;
+}
+
+.box img {
+  width: 80px;
+  border-radius: 100%;
+  padding: 5px;
+  margin-bottom: -10px;
+  border: 2px solid #dee2e6;
+  backface-visibility: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.box:hover img {
+  transform: scale(1.2);
+}
+
+.box h2 {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.box span {
+  font-size: 14px;
+  display: block;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.box ul {
+  padding: 0;
+}
+
+.box ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.box ul li a .fa {
+  color: #999;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  margin: 5px;
+  transition: .3s;
 }
 
 #pFooter {
@@ -389,6 +458,9 @@ a.active,a:hover {
   font-size: 2rem;
 }
 
+/* .teamImg1 {
+  margin-right: 35px;
+} */
 
 
 
@@ -461,5 +533,11 @@ a.active,a:hover {
   .all-text h1 {
     font-size: 45px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-box {
+    display: block;
   }
 }
