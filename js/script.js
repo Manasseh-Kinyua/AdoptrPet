@@ -1,3 +1,4 @@
+
 function Contact(name, email, telephone) {
     this.name = name;
     this.email = email;
@@ -6,7 +7,7 @@ function Contact(name, email, telephone) {
   }
   
   Contact.prototype.details = function() {
-    return this.name+""+this.email+""+this.tel;
+    return this.name;
   }
   
 function Address(county, city, estate, house) {
@@ -18,7 +19,7 @@ function Address(county, city, estate, house) {
   }
   
   Address.prototype.delivery = function() {
-    return this.county+""+this.city+""+this.estate+""+this.house;
+    return this.county+", "+this.city+", "+this.estate+", "+this.house;
   } 
 
 
@@ -33,7 +34,7 @@ $(document).ready(function () {
 
     var Customer = new Contact(inputtedName, inputtedEmail, inputtedNumber);
 
-    alert(Customer.details());
+    // alert(Customer.details());
 
     var count = $("input#county").val();
     var city = $("input#city").val();
@@ -42,8 +43,20 @@ $(document).ready(function () {
     
     var loc = new Address(count, city, estate, house);
     
-    alert(loc.delivery());
+    // alert(loc.delivery());
 
+
+
+
+
+    $('#sub').click(function() {
+      $('#successful').modal('show')
+  
+      $('#jina').append(Customer.details());
+      $('#ishi').append(loc.delivery());
+ 
+    })
+      
       });
 
 
@@ -58,18 +71,10 @@ $(document).ready(function () {
     $('#deliver').click(function (){
         $("#detail").toggle("slow");
         $("#location").toggle("slow");
-
-
         
     });
 
-
-
-
-
-
-
-
+  
 
 
 

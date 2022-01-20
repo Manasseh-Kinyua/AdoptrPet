@@ -26,7 +26,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="assets/images/logo.png" type="image/png" />
   <link href="../css/style.css" rel="stylesheet">
-  <title>Adoptr Pet</title>
+  <title>Details</title>
 </head>
 
 <body>
@@ -53,43 +53,43 @@
 
                           <div class="form-input">
                             <label class="form-label" for="name">county</label>
-                            <input type="text" id="county" class="form-control"  />
+                            <input type="text" id="county" class="form-control" />
                           </div>
-  
+
                           <div class="form-input">
                             <label class="form-label" for="email">City</label>
-                            <input type="text" id="city" class="form-control"  />
+                            <input type="text" id="city" class="form-control" />
                           </div>
-  
+
                           <div class="form-input">
                             <label class="form-label" for="number">Estate</label>
-                            <input type="text" id="estate" class="form-control"   />
+                            <input type="text" id="estate" class="form-control" />
                           </div>
                           <div class="form-input">
                             <label class="form-label" for="address">House</label>
-                            <input type="text" id="house" class="form-control"  />
+                            <input type="text" id="house" class="form-control" />
                           </div>
 
                         </div>
                         <div id="detail">
-                        <h4 class="fw-bold mb-4">Input Your Details To Continue</h4>
-                        <p class="mb-4" style="color: #F1C40F;">All fields with a * are required.</p>
+                          <h4 class="fw-bold mb-4">Input Your Details To Continue</h4>
+                          <p class="mb-4" style="color: #F1C40F;">All fields with a * are required.</p>
 
-                        <div class="form-input">
-                          <label class="form-label" for="name">Name*</label>
-                          <input type="text" id="fname" class="form-control"  />
-                        </div>
+                          <div class="form-input">
+                            <label class="form-label" for="name">Name*</label>
+                            <input type="text" id="fname" class="form-control" />
+                          </div>
 
-                        <div class="form-input">
-                          <label class="form-label" for="email">Email address</label>
-                          <input type="email" id="email" class="form-control" placeholder="someone@example.com" />
-                        </div>
+                          <div class="form-input">
+                            <label class="form-label" for="email">Email address</label>
+                            <input type="email" id="email" class="form-control" placeholder="someone@example.com" />
+                          </div>
 
-                        <div class="form-input">
-                          <label class="form-label" for="number">Phone Number*</label>
-                          <input type="tel" id="number" class="form-control" placeholder="+254 712 345 678"  />
-                        </div>
-                        <!-- <div class="form-input">
+                          <div class="form-input">
+                            <label class="form-label" for="number">Phone Number*</label>
+                            <input type="tel" id="number" class="form-control" placeholder="+254 712 345 678" />
+                          </div>
+                          <!-- <div class="form-input">
                           <label class="form-label" for="add">Address</label>
                           <input type="text" id="add" class="form-control"  />
                         </div> -->
@@ -98,8 +98,10 @@
 
 
                         <hr class="line">
-                        <button type="button" id="deliver" class="btn btn-primary" style="background-color: #FF5733;">Deliver</button>
-                        <button type="submit" class="btn btn-primary ms-auto" style="background-color: #FF5733;">Submit</button>
+                        <button type="button" id="deliver" class="btn btn-primary"
+                          style="background-color: #FF5733;">Deliver</button>
+                        <button type="submit" class="btn btn-primary ms-auto" id="sub"
+                          style="background-color: #FF5733;">Submit</button>
                         <hr class="line">
 
 
@@ -116,6 +118,44 @@
       </div>
     </div>
   </section>
+
+  <div class="modal fade" id="successful" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="name">Congratulations</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="details">Congaratulations <span id="jina"></span> You have a new pet</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="details">Delivery Address<br><span id="ishi"></span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12" id="pet">
+                <img src="../assets/images/dog-990304_1920-removebg-preview.png" id="bathdog" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="location.href = '../index.html';" class="btn btn-secondary" data-bs-dismiss="modal" id="cancel">Yaay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <script src="../js/script.js"></script>
 </body>
 
