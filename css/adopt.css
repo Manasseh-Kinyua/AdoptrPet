@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Shadows+Into+Light&display=swap');
-/*font-family: 'Dongle', sans-serif;
-font-family: 'Shadows Into Light', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Mali', cursive;
+ }
 
 *{
   box-sizing: border-box;
@@ -100,7 +106,7 @@ font-family: 'Shadows Into Light', cursive;*/
   justify-content: center;
   text-align: center;
   background-color: white;
-  box-shadow: 2px 2px 2px 1px #eeb21d;
+  box-shadow: 3px 3px 3px 2px #eeb21d;
   font-family: 'Shadows Into Light', 'cursive';
   font-weight: 500;
   font-size: 22px;
