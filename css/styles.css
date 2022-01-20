@@ -374,6 +374,10 @@ a.active,a:hover {
   transform: scale(0.95);
 }
 
+#team {
+  display: none;
+}
+
 
 
 
