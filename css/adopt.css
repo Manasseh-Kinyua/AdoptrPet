@@ -124,7 +124,17 @@ h2, h3 {
 #dogicon{
   padding-top: 30px;
 }
+.row{
+  padding-right: 30px;
+}
+#pFooter {
+  background: #EEB21D;
+}
 
+.mobile h5 {
+  font-weight: bold;
+  font-size: 2rem;
+}
 @media only screen and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
 }
