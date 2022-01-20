@@ -1,14 +1,25 @@
-function Contact(name, email, telephone, add) {
+function Contact(name, email, telephone) {
     this.name = name;
     this.email = email;
     this.tel = telephone;
-    this.address = add;;
+
   }
   
   Contact.prototype.details = function() {
-    return this.name+""+this.address+""+this.email;
+    return this.name+""+this.email+""+this.tel;
   }
   
+function Address(county, city, estate, house) {
+    this.county = county;
+    this.city = city;
+    this.estate = estate;
+    this.house = house;
+
+  }
+  
+  Address.prototype.delivery = function() {
+    return this.county+""+this.city+""+this.estate+""+this.house;
+  } 
 
 
 $(document).ready(function () {
@@ -19,10 +30,19 @@ $(document).ready(function () {
     var inputtedName = $("input#fname").val();
     var inputtedEmail = $("input#email").val();
     var inputtedNumber = $("input#number").val();
-    var inputtedAddress = $("input#address").val();
-    var newCustomer = new Contact(inputtedName, inputtedEmail, inputtedNumber, inputtedAddress);
 
-    alert(newCustomer.details)
+    var Customer = new Contact(inputtedName, inputtedEmail, inputtedNumber);
+
+    alert(Customer.details());
+
+    var count = $("input#county").val();
+    var city = $("input#city").val();
+    var estate = $("input#estate").val();
+    var house = $("input#house").val();
+    
+    var loc = new Address(count, city, estate, house);
+    
+    alert(loc.delivery());
 
       });
 
@@ -33,6 +53,47 @@ $(document).ready(function () {
     $('#abort').click(function () {
         location.reload();
     });
+
+
+    $('#deliver').click(function (){
+        $("#detail").toggle("slow");
+        $("#location").toggle("slow");
+
+
+        
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,7 +178,7 @@ $(document).ready(function () {
         $("#age").append('<p class=title>AGE:</p>' + '<p class=details> 11 Months </p>');
         $("#vaccination").append('<p class=title>VACCINATION:</p>' + '<p class=details> Vaccinated </p>');
         $("#description").append('<P class=title>DESCRIPTION:</p>' + '<hr class=line>' + '<p class=details>A very shy gorgeous cat that loves to play and nap all day, she will also get rid of your unwanted guests')
-        $(".modal-footer").append('<button type="button" class="btn data-bs-dismiss="modal" btn-primary" id="kiwi">Yes Yes</button>');
+        $(".modal-footer").append('<button type="button" class="btn btn-primary" data-bs-dismiss="modal"  id="kiwi">Yes Yes</button>');
 
             $("#kiwi").click(function() {
                 $("#petConfirm").modal('show');
