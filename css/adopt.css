@@ -135,6 +135,7 @@ h2, h3 {
   font-weight: bold;
   font-size: 2rem;
 }
+
 @media only screen and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
 }
