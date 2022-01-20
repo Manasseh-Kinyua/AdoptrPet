@@ -46,6 +46,7 @@ h2, h3 {
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 40px;
+  background-image: url(../assets/subtle-prism\ \(1\).svg);
 }
 
 #four{
@@ -77,6 +78,14 @@ h2, h3 {
 }
 .logohidden{
   display: none;
+}
+
+.card{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 4px 8px 0 #333;
+  margin: 10px;
 }
 
 .card:hover {
@@ -111,6 +120,9 @@ h2, h3 {
   font-weight: 500;
   font-size: 22px;
 }
+.boxtwo{
+  padding-top: 200px;
+}
 #dogicon{
   padding-top: 30px;
 }
@@ -123,10 +135,16 @@ h2, h3 {
     padding: 20px;
     border-radius: 10px;
     background-color: white;
+    font-size: 18px;
   }
-  #dogicon{
-    padding-top: 5px;
+  .boxtwo{
+    display: none;
   }
+  .card{
+    margin: 10px;
+    width: 100%;
+  }
+
 }
 @media only screen and (max-width: 425px){
 /*Small smartphones [325px -> 425px]*/
