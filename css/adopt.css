@@ -6,6 +6,7 @@ body{
 
 h2, h3 {
   font-family: 'Mali', cursive;
+  color: #FF5733;
  }
 
 *{
@@ -29,10 +30,7 @@ h2, h3 {
 
 #two{
   grid-area: two;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 60px;
   text-align: center;
   background-color: rgb(245, 245, 245);
   background-image: url(../assets/background.jpg);
@@ -47,6 +45,8 @@ h2, h3 {
   padding-top: 20px;
   padding-bottom: 40px;
   background-image: url(../assets/subtle-prism\ \(1\).svg);
+  padding-left: 40px;
+  padding-left: 40px;
 }
 
 #four{
@@ -57,7 +57,6 @@ h2, h3 {
 }
 
 .navbar {
-  overflow: hidden;
   position: fixed;
 }
 
@@ -74,18 +73,17 @@ h2, h3 {
 }
 
 .logotwo, .logohidden{
-  max-width: 160px;
+  max-width: 180px;
 }
 .logohidden{
   display: none;
 }
-
 .card{
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   box-shadow: 0 4px 8px 0 #333;
-  margin: 10px;
+  margin: 20px;
 }
 
 .card:hover {
@@ -109,7 +107,7 @@ h2, h3 {
 }
 .box{
   margin-top: 30px;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid rgb(207, 207, 207);
   justify-content: center;
@@ -126,6 +124,7 @@ h2, h3 {
 #dogicon{
   padding-top: 30px;
 }
+
 @media only screen and (max-width: 1200px){
   /*Tablets [601px -> 1200px]*/
 }
