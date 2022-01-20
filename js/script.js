@@ -100,18 +100,18 @@ $(document).ready(function () {
 
     $("#yuki").one('click', function () {
         $("#animalDetails").modal('show');
-        $("#pic").append('<img src="./assets/images/yuki.jpg" width="100%" alt="">');
+        $("#pic").append('<img src="../assets/images/yuki.jpg" width="100%" alt="">');
         $("#name").append('YUKI');
         $("#breed").append('<p class=title>BREED:</p>' + '<hr class=line>' + '<p class=details> Kenyan Shepherd </p>');
         $("#gender").append('<p class=title>GENDER:</p>' + '<p class=details> Female </p>');
         $("#age").append('<p class=title>AGE:</p>' + '<p class=details> 24 Months </p>');
         $("#vaccination").append('<p class=title>VACCINATION:</p>' + '<p class=details> Fully Vaccinated </p>');
         $("#description").append('<P class=title>DESCRIPTION:</p>' + '<hr class=line>' + '<p class=details>2 year old female, playful; fully vaccinated, spayed and is ready for a new home.')
-        $(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="yuki">Yes Yes</button>');
+        //$(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="yuki">Yes Yes</button>');
 
-            $("#yuki").click(function() {
+            $("#confirm").click(function() {
                 $("#petConfirm").modal('show');
-                $("#pic1").append('<img src="./assets/images/yuki.jpg" width="100%" alt="">');
+                $("#pic1").append('<img src="../assets/images/yuki.jpg" width="100%" alt="">');
                 $("#name1").append('<p class=details>YUKI</p>'+ '<hr class=line>');
                 $("#breed1").append('<p class=details>Kenyan Shepherd</p>'+ '<hr class=line>');
                 $("#gender1").append('<p class=details>Female</p>'+ '<hr class=line>');
@@ -124,18 +124,18 @@ $(document).ready(function () {
 
     $("#jojo").one('click', function () {
         $("#animalDetails").modal('show');
-        $("#pic").append('<img src="./assets/images/jojo.jpg" width="100%" alt="">');
+        $("#pic").append('<img src="../assets/images/jojo.jpg" width="100%" alt="">');
         $("#name").append('JOJO');
         $("#breed").append('<p class=title>BREED:</p>' + '<hr class=line>' + '<p class=details> Persian Cat</p>');
         $("#gender").append('<p class=title>GENDER:</p>' + '<p class=details> Female </p>');
         $("#age").append('<p class=title>AGE:</p>' + '<p class=details> 24 Months </p>');
         $("#vaccination").append('<p class=title>VACCINATION:</p>' + '<p class=details> Pending Vaccination </p>');
         $("#description").append('<P class=title>DESCRIPTION:</p>' + '<hr class=line>' + '<p class=details>A very shy gorgeous cat that loves to play and nap all day, she will also get rid of your unwanted guests')
-        $(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="jojo">Yes Yes</button>');
+        //$(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="jojo">Yes Yes</button>');
        
-            $("#jojo").click(function() {
+            $("#confirm").click(function() {
                 $("#petConfirm").modal('show');
-                $("#pic1").append('<img src="./assets/images/jojo.jpg" width="100%" alt="">');
+                $("#pic1").append('<img src="../assets/images/jojo.jpg" width="100%" alt="">');
                 $("#name1").append('<p class=details>JOJO</p>'+ '<hr class=line>');
                 $("#breed1").append('<p class=details>Persian Cat</p>'+ '<hr class=line>');
                 $("#gender1").append('<p class=details>Female</p>'+ '<hr class=line>');
@@ -147,18 +147,18 @@ $(document).ready(function () {
 
     $("#apollo").one('click', function () {
         $("#animalDetails").modal('show');
-        $("#pic").append('<img src="./assets/images/apollo.jpg" width="100%" alt="">');
+        $("#pic").append('<img src="../assets/images/apollo.jpg" width="100%" alt="">');
         $("#name").append('APOLLO');
         $("#breed").append('<p class=title>BREED:</p>' + '<hr class=line>' + '<p class=details> Street Dog</p>');
         $("#gender").append('<p class=title>GENDER:</p>' + '<p class=details> Male </p>');
         $("#age").append('<p class=title>AGE:</p>' + '<p class=details> 3 Months </p>');
         $("#vaccination").append('<p class=title>VACCINATION:</p>' + '<p class=details> Pending Vaccination </p>');
         $("#description").append('<P class=title>DESCRIPTION:</p>' + '<hr class=line>' + '<p class=details>Playful. You will need to bring him back for his final round of shots in two weeks')
-        $(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="apollo">Yes Yes</button>');
+        //$(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="apollo">Yes Yes</button>');
             
-            $("#apollo").click(function() {
+            $("#confirm").click(function() {
                 $("#petConfirm").modal('show');
-                $("#pic1").append('<img src="./assets/images/apollo.jpg" width="100%" alt="">');
+                $("#pic1").append('<img src="../assets/images/apollo.jpg" width="100%" alt="">');
                 $("#name1").append('<p class=details>APOLLO</p>'+ '<hr class=line>');
                 $("#breed1").append('<p class=details>Street Dog</p>'+ '<hr class=line>');
                 $("#gender1").append('<p class=details>Male</p>'+ '<hr class=line>');
@@ -171,18 +171,18 @@ $(document).ready(function () {
 
     $("#kiwi").one('click', function () {
         $("#animalDetails").modal('show');
-        $("#pic").append('<img src="./assets/images/kiwi.jpg" width="100%" alt="">');
+        $("#pic").append('<img src="../assets/images/kiwi.jpg" width="100%" alt="">');
         $("#name").append('KIWI');
         $("#breed").append('<p class=title>BREED:</p>' + '<hr class=line>' + '<p class=details> Domestic Short Haired Cat</p>');
         $("#gender").append('<p class=title>GENDER:</p>' + '<p class=details> Male </p>');
         $("#age").append('<p class=title>AGE:</p>' + '<p class=details> 11 Months </p>');
         $("#vaccination").append('<p class=title>VACCINATION:</p>' + '<p class=details> Vaccinated </p>');
         $("#description").append('<P class=title>DESCRIPTION:</p>' + '<hr class=line>' + '<p class=details>A very shy gorgeous cat that loves to play and nap all day, she will also get rid of your unwanted guests')
-        $(".modal-footer").append('<button type="button" class="btn btn-primary" data-bs-dismiss="modal"  id="kiwi">Yes Yes</button>');
+        //$(".modal-footer").append('<button type="button" class="btn btn-primary" data-bs-dismiss="modal"  id="kiwi">Yes Yes</button>');
 
-            $("#kiwi").click(function() {
+            $("#confirm").click(function() {
                 $("#petConfirm").modal('show');
-                $("#pic1").append('<img src="./assets/images/kiwi.jpg" width="100%" alt="">');
+                $("#pic1").append('<img src="../assets/images/kiwi.jpg" width="100%" alt="">');
                 $("#name1").append('<p class=details>KIWI</p>'+ '<hr class=line>');
                 $("#breed1").append('<p class=details>Domestic Short Haired Cat</p>'+ '<hr class=line>');
                 $("#gender1").append('<p class=details>Male</p>'+ '<hr class=line>');
@@ -195,18 +195,18 @@ $(document).ready(function () {
 
     $("#nala").one('click', function () {
         $("#animalDetails").modal('show');
-        $("#pic").append('<img src="./assets/images/nala.jpg" width="100%" alt="">');
+        $("#pic").append('<img src="../assets/images/nala.jpg" width="100%" alt="">');
         $("#name").append('NALA');
         $("#breed").append('<p class=title>BREED:</p>' + '<hr class=line>' + '<p class=details> Domestic Short Haired Cat</p>');
         $("#gender").append('<p class=title>GENDER:</p>' + '<p class=details> Female </p>');
         $("#age").append('<p class=title>AGE:</p>' + '<p class=details> 16 Months </p>');
         $("#vaccination").append('<p class=title>VACCINATION:</p>' + '<p class=details> Pending Vaccination </p>');
         $("#description").append('<P class=title>DESCRIPTION:</p>' + '<hr class=line>' + '<p class=details>A very shy gorgeous cat that loves to play and nap all day, she will also get rid of your unwanted guests')
-        $(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="nala">Yes Yes</button>');
+        //$(".modal-footer").append('<button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="nala">Yes Yes</button>');
 
-            $("#nala").click(function() {
+            $("#confirm").click(function() {
                 $("#petConfirm").modal('show');
-                $("#pic1").append('<img src="./assets/images/nala.jpg" width="100%" alt="">');
+                $("#pic1").append('<img src="../assets/images/nala.jpg" width="100%" alt="">');
                 $("#name1").append('<p class=details>NALA</p>'+ '<hr class=line>');
                 $("#breed1").append('<p class=details>Domestic Short Haired Cat</p>'+ '<hr class=line>');
                 $("#gender1").append('<p class=details>Female</p>'+ '<hr class=line>');
@@ -221,18 +221,18 @@ $(document).ready(function () {
     
     $("#atlas").click(function (atlas) {
         $("#animalDetails").modal('show');
-        $("#pic").append('<img src="./assets/images/atlas.jpg" width="100%" alt="">');
+        $("#pic").append('<img src="../assets/images/atlas.jpg" width="100%" alt="">');
         $("#name").append('ATLAS');
         $("#breed").append('<p class=title>BREED:</p>' + '<hr class=line>' + '<p class=details> Vulnerable Native Breed</p>');
         $("#gender").append('<p class=title>GENDER:</p>' + '<p class=details> Male </p>');
         $("#age").append('<p class=title>AGE:</p>' + '<p class=details> 18 Months </p>');
         $("#vaccination").append('<p class=title>VACCINATION:</p>' + '<p class=details> Vaccinated </p>');
         $("#description").append('<P class=title>DESCRIPTION:</p>' + '<hr class=line>' + '<p class=details>A very shy gorgeous cat that loves to play and nap all day, she will also get rid of your unwanted guests')
-        $(".modal-footer").append('<button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="atlas">Yeeees</button>');
+        //$(".modal-footer").append('<button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="atlas">Yeeees</button>');
         
-            $("#atlas").click(function() {
+            $("#confrim").click(function() {
                 $("#petConfirm").modal('show');
-                $("#pic1").append('<img src="./assets/images/atlas.jpg" width="100%" alt="">');
+                $("#pic1").append('<img src="../assets/images/atlas.jpg" width="100%" alt="">');
                 $("#name1").append('<p class=details>ATLAS</p>'+ '<hr class=line>');
                 $("#breed1").append('<p class=details>Vulnerable Native Breed</p>'+ '<hr class=line>');
                 $("#gender1").append('<p class=details>Male</p>'+ '<hr class=line>');
