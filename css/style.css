@@ -98,6 +98,9 @@ font-family: 'Shadows Into Light', cursive;*/
   text-align: center;
   background-color: white;
   box-shadow: 2px 2px 2px 1px #eeb21d;
+  font-family: 'Shadows Into Light', 'cursive';
+  font-weight: 500;
+  font-size: 22px;
 }
 #dogicon{
   padding-top: 30px;
