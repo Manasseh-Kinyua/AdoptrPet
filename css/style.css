@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Shadows+Into+Light&display=swap');
+/*font-family: 'Dongle', sans-serif;
+font-family: 'Shadows Into Light', cursive;*/
+
+*{
+  box-sizing: border-box;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  'one one'
+  'two two'
+  'three three'
+  'four four';
+}
+
+#one{
+  background-color: #eeb21d;
+  grid-area: one;
+  display: flex;
+}
+
+#two{
+  grid-area: two;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+
+#three{
+  grid-area: three;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#four{
+  background-color: #eeb21d;
+  grid-area: four;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+}
+
+.navbar a {
+  color: #333;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  background: #333;
+  color: #eeb21d;
+}
+
+.logotwo, .logohidden{
+  max-width: 160px;
+}
+.logohidden{
+  display: none;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 #333;
+  background-color: #eeb21d;
+}
+
+
+.logo{
+  margin: 10px;
+}
+.icon{
+  max-height: 40px;
+  margin: 10px;
+}
+.container-fluid{
+  padding: 5px;
+  margin: 5px;
+}
+.box{
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(207, 207, 207);
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px #eeb21d;
+  font-family: 'Shadows Into Light', 'cursive';
+  font-weight: 500;
+  font-size: 22px;
+}
+#dogicon{
+  padding-top: 30px;
+}
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+  .box{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  #dogicon{
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+}
