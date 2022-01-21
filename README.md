@@ -4,7 +4,7 @@
 -[Manasseh Kinyua](https://github.com/Manasseh-Kinyua)
 -[Sharon Korir](https://github.com/sharonkorir)
 -[Basilia Wairimu](https://github.com/Bwairimu)
--[Amin](https://github.com/Aminmoha)
+-[Brian Njoroge](https://github.com/Njoro410)
 ## Description This is a web application that matches interested pet owners to rehabilitated stray cats and dogs for rehoming.
 ## Setup/Installation Requirements
 * Click on the link and the page will load.
